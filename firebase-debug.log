@@ -1,0 +1,139 @@
+[debug] [2024-11-17T05:02:58.459Z] ----------------------------------------------------------------------
+[debug] [2024-11-17T05:02:58.461Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\Gurneet Singh\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js init
+[debug] [2024-11-17T05:02:58.461Z] CLI Version:   13.25.0
+[debug] [2024-11-17T05:02:58.461Z] Platform:      win32
+[debug] [2024-11-17T05:02:58.461Z] Node Version:  v20.11.1
+[debug] [2024-11-17T05:02:58.461Z] Time:          Sat Nov 16 2024 21:02:58 GMT-0800 (Pacific Standard Time)
+[debug] [2024-11-17T05:02:58.461Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2024-11-17T05:02:58.466Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2024-11-17T05:02:58.466Z] > authorizing via signed-in user (gurneetsinghcanada@gmail.com)
+[info] 
+     ######## #### ########  ######## ########     ###     ######  ########
+     ##        ##  ##     ## ##       ##     ##  ##   ##  ##       ##
+     ######    ##  ########  ######   ########  #########  ######  ######
+     ##        ##  ##    ##  ##       ##     ## ##     ##       ## ##
+     ##       #### ##     ## ######## ########  ##     ##  ######  ########
+
+You're about to initialize a Firebase project in this directory:
+
+  C:\Users\Gurneet Singh\OneDrive\Documents\Desktop\BloggingApp
+
+[info] 
+=== Project Setup
+[info] 
+[info] First, let's associate this project directory with a Firebase project.
+[info] You can create multiple project aliases by running firebase use --add, 
+[info] but for now we'll just set up a default project.
+[info] 
+[debug] [2024-11-17T05:03:25.346Z] Checked if tokens are valid: true, expires at: 1731822673594
+[debug] [2024-11-17T05:03:25.346Z] Checked if tokens are valid: true, expires at: 1731822673594
+[debug] [2024-11-17T05:03:25.347Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects pageSize=100
+[debug] [2024-11-17T05:03:25.764Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects 200
+[debug] [2024-11-17T05:03:25.764Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects [omitted]
+[info] i  Using project blogging-app-c72be (Blogging App) 
+[info] 
+=== Dataconnect Setup
+[debug] [2024-11-17T05:03:26.908Z] Checked if tokens are valid: true, expires at: 1731822673594
+[debug] [2024-11-17T05:03:26.908Z] Checked if tokens are valid: true, expires at: 1731822673594
+[debug] [2024-11-17T05:03:26.908Z] >>> [apiv2][query] GET https://cloudbilling.googleapis.com/v1/projects/blogging-app-c72be/billingInfo [none]
+[debug] [2024-11-17T05:03:27.074Z] <<< [apiv2][status] GET https://cloudbilling.googleapis.com/v1/projects/blogging-app-c72be/billingInfo 200
+[debug] [2024-11-17T05:03:27.074Z] <<< [apiv2][body] GET https://cloudbilling.googleapis.com/v1/projects/blogging-app-c72be/billingInfo {"name":"projects/blogging-app-c72be/billingInfo","projectId":"blogging-app-c72be","billingAccountName":"","billingEnabled":false}
+[info] i  dataconnect: ensuring required API sqladmin.googleapis.com is enabled... 
+[debug] [2024-11-17T05:03:27.075Z] Checked if tokens are valid: true, expires at: 1731822673594
+[debug] [2024-11-17T05:03:27.075Z] Checked if tokens are valid: true, expires at: 1731822673594
+[debug] [2024-11-17T05:03:27.075Z] >>> [apiv2][query] GET https://serviceusage.googleapis.com/v1/projects/blogging-app-c72be/services/sqladmin.googleapis.com [none]
+[debug] [2024-11-17T05:03:27.075Z] >>> [apiv2][(partial)header] GET https://serviceusage.googleapis.com/v1/projects/blogging-app-c72be/services/sqladmin.googleapis.com x-goog-quota-user=projects/blogging-app-c72be
+[debug] [2024-11-17T05:03:27.538Z] <<< [apiv2][status] GET https://serviceusage.googleapis.com/v1/projects/blogging-app-c72be/services/sqladmin.googleapis.com 200
+[debug] [2024-11-17T05:03:27.538Z] <<< [apiv2][body] GET https://serviceusage.googleapis.com/v1/projects/blogging-app-c72be/services/sqladmin.googleapis.com [omitted]
+[info] +  dataconnect: required API sqladmin.googleapis.com is enabled 
+[info] i  dataconnect\dataconnect.yaml is unchanged 
+[info] i  dataconnect\schema\schema.gql is unchanged 
+[info] +  Wrote dataconnect\connector\connector.yaml 
+[info] i  dataconnect\connector\queries.gql is unchanged 
+[info] i  dataconnect\connector\mutations.gql is unchanged 
+[info] +  Detected WEB app in directory C:\Users\Gurneet Singh\OneDrive\Documents\Desktop\BloggingApp 
+[info] i  Wrote new config to C:\Users\Gurneet Singh\OneDrive\Documents\Desktop\BloggingApp\dataconnect\connector/connector.yaml 
+[info] I1116 21:03:32.574797    4224 codegen.go:82] [connector "default" javascriptSdk] Generating sources into "C:\\Users\\Gurneet Singh\\OneDrive\\Documents\\Desktop\\BloggingApp\\dataconnect-generated\\js\\default-connector"
+I1116 21:03:32.575876    4224 generate.go:40] Generated all sources. Writing them to disk...
+I1116 21:03:32.576929    4224 collector.go:107] connector "default" javascriptSdk wrote into "C:\\Users\\Gurneet Singh\\OneDrive\\Documents\\Desktop\\BloggingApp\\dataconnect-generated\\js\\default-connector"
+Generated sources: index.d.ts [264B] esm\index.esm.js [184B] esm\package.json [17B] index.cjs.js [225B] package.json [623B] 
+I1116 21:03:32.590545    4224 installsdk.go:76] Running command: C:\Program Files\nodejs\npm.cmd install file:dataconnect-generated\js\default-connector
+
+[info] i  Generated SDK code for default 
+[info] +  If you'd like to add more generated SDKs to your app your later, run firebase init dataconnect:sdk again 
+[info] i  If you'd like to provision a CloudSQL Postgres instance on the Firebase Data Connect no-cost trial:
+1. Please upgrade to the pay-as-you-go (Blaze) billing plan. Visit the following page:
+     https://console.firebase.google.com/project/blogging-app-c72be/usage/details
+2. Run firebase init dataconnect again to configure the Cloud SQL instance.
+3. Run firebase deploy --only dataconnect to deploy your Data Connect service. 
+[info] 
+=== Firestore Setup
+[debug] [2024-11-17T05:03:33.939Z] Checked if tokens are valid: true, expires at: 1731822673594
+[debug] [2024-11-17T05:03:33.939Z] Checked if tokens are valid: true, expires at: 1731822673594
+[debug] [2024-11-17T05:03:33.939Z] >>> [apiv2][query] GET https://serviceusage.googleapis.com/v1/projects/blogging-app-c72be/services/firestore.googleapis.com [none]
+[debug] [2024-11-17T05:03:33.939Z] >>> [apiv2][(partial)header] GET https://serviceusage.googleapis.com/v1/projects/blogging-app-c72be/services/firestore.googleapis.com x-goog-quota-user=projects/blogging-app-c72be
+[debug] [2024-11-17T05:03:34.094Z] <<< [apiv2][status] GET https://serviceusage.googleapis.com/v1/projects/blogging-app-c72be/services/firestore.googleapis.com 200
+[debug] [2024-11-17T05:03:34.094Z] <<< [apiv2][body] GET https://serviceusage.googleapis.com/v1/projects/blogging-app-c72be/services/firestore.googleapis.com [omitted]
+[debug] [2024-11-17T05:03:34.095Z] Checked if tokens are valid: true, expires at: 1731822673594
+[debug] [2024-11-17T05:03:34.095Z] Checked if tokens are valid: true, expires at: 1731822673594
+[debug] [2024-11-17T05:03:34.095Z] >>> [apiv2][query] GET https://firestore.googleapis.com/v1/projects/blogging-app-c72be/databases/(default) [none]
+[debug] [2024-11-17T05:03:34.669Z] <<< [apiv2][status] GET https://firestore.googleapis.com/v1/projects/blogging-app-c72be/databases/(default) 200
+[debug] [2024-11-17T05:03:34.669Z] <<< [apiv2][body] GET https://firestore.googleapis.com/v1/projects/blogging-app-c72be/databases/(default) {"name":"projects/blogging-app-c72be/databases/(default)","uid":"37081fb6-67dd-45da-99db-76f51b47d6a9","createTime":"2024-11-17T05:02:31.226165Z","updateTime":"2024-11-17T05:02:31.226165Z","locationId":"nam5","type":"FIRESTORE_NATIVE","concurrencyMode":"PESSIMISTIC","versionRetentionPeriod":"3600s","earliestVersionTime":"2024-11-17T05:02:31.226165Z","appEngineIntegrationMode":"DISABLED","keyPrefix":"s","pointInTimeRecoveryEnablement":"POINT_IN_TIME_RECOVERY_DISABLED","deleteProtectionState":"DELETE_PROTECTION_DISABLED","etag":"IPGvgcfL4okDMLX22KjL4okD"}
+[debug] [2024-11-17T05:03:34.669Z] database_type: FIRESTORE_NATIVE
+[debug] [2024-11-17T05:03:34.669Z] database_type: FIRESTORE_NATIVE
+[debug] [2024-11-17T05:03:34.669Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2024-11-17T05:03:34.670Z] > authorizing via signed-in user (gurneetsinghcanada@gmail.com)
+[debug] [2024-11-17T05:03:34.670Z] [iam] checking project blogging-app-c72be for permissions ["firebase.projects.get"]
+[debug] [2024-11-17T05:03:34.670Z] Checked if tokens are valid: true, expires at: 1731822673594
+[debug] [2024-11-17T05:03:34.670Z] Checked if tokens are valid: true, expires at: 1731822673594
+[debug] [2024-11-17T05:03:34.670Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects/blogging-app-c72be:testIamPermissions [none]
+[debug] [2024-11-17T05:03:34.670Z] >>> [apiv2][(partial)header] POST https://cloudresourcemanager.googleapis.com/v1/projects/blogging-app-c72be:testIamPermissions x-goog-quota-user=projects/blogging-app-c72be
+[debug] [2024-11-17T05:03:34.670Z] >>> [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/blogging-app-c72be:testIamPermissions {"permissions":["firebase.projects.get"]}
+[debug] [2024-11-17T05:03:34.781Z] <<< [apiv2][status] POST https://cloudresourcemanager.googleapis.com/v1/projects/blogging-app-c72be:testIamPermissions 200
+[debug] [2024-11-17T05:03:34.781Z] <<< [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/blogging-app-c72be:testIamPermissions {"permissions":["firebase.projects.get"]}
+[info] 
+[info] Firestore Security Rules allow you to define how and when to allow
+[info] requests. You can keep these rules in your project directory
+[info] and publish them with firebase deploy.
+[info] 
+[debug] [2024-11-17T05:03:39.928Z] Checked if tokens are valid: true, expires at: 1731822673594
+[debug] [2024-11-17T05:03:39.928Z] Checked if tokens are valid: true, expires at: 1731822673594
+[debug] [2024-11-17T05:03:39.928Z] >>> [apiv2][query] GET https://firebaserules.googleapis.com/v1/projects/blogging-app-c72be/releases pageSize=10&pageToken=
+[debug] [2024-11-17T05:03:40.246Z] <<< [apiv2][status] GET https://firebaserules.googleapis.com/v1/projects/blogging-app-c72be/releases 200
+[debug] [2024-11-17T05:03:40.246Z] <<< [apiv2][body] GET https://firebaserules.googleapis.com/v1/projects/blogging-app-c72be/releases {"releases":[{"name":"projects/blogging-app-c72be/releases/cloud.firestore","rulesetName":"projects/blogging-app-c72be/rulesets/830b119b-5d7f-401b-962e-d49f34177bdc","createTime":"2024-11-17T05:02:35.926391Z","updateTime":"2024-11-17T05:02:35.926391Z"}]}
+[debug] [2024-11-17T05:03:40.246Z] Found ruleset: projects/blogging-app-c72be/rulesets/830b119b-5d7f-401b-962e-d49f34177bdc
+[debug] [2024-11-17T05:03:40.246Z] Checked if tokens are valid: true, expires at: 1731822673594
+[debug] [2024-11-17T05:03:40.246Z] Checked if tokens are valid: true, expires at: 1731822673594
+[debug] [2024-11-17T05:03:40.246Z] >>> [apiv2][query] GET https://firebaserules.googleapis.com/v1/projects/blogging-app-c72be/rulesets/830b119b-5d7f-401b-962e-d49f34177bdc [none]
+[debug] [2024-11-17T05:03:40.340Z] <<< [apiv2][status] GET https://firebaserules.googleapis.com/v1/projects/blogging-app-c72be/rulesets/830b119b-5d7f-401b-962e-d49f34177bdc 200
+[debug] [2024-11-17T05:03:40.341Z] <<< [apiv2][body] GET https://firebaserules.googleapis.com/v1/projects/blogging-app-c72be/rulesets/830b119b-5d7f-401b-962e-d49f34177bdc [omitted]
+[info] 
+[info] Firestore indexes allow you to perform complex queries while
+[info] maintaining performance that scales with the size of the result
+[info] set. You can keep index definitions in your project directory
+[info] and publish them with firebase deploy.
+[info] 
+[debug] [2024-11-17T05:03:42.009Z] Checked if tokens are valid: true, expires at: 1731822673594
+[debug] [2024-11-17T05:03:42.010Z] Checked if tokens are valid: true, expires at: 1731822673594
+[debug] [2024-11-17T05:03:42.010Z] Checked if tokens are valid: true, expires at: 1731822673594
+[debug] [2024-11-17T05:03:42.010Z] Checked if tokens are valid: true, expires at: 1731822673594
+[debug] [2024-11-17T05:03:42.010Z] >>> [apiv2][query] GET https://firestore.googleapis.com/v1/projects/blogging-app-c72be/databases/(default)/collectionGroups/-/indexes [none]
+[debug] [2024-11-17T05:03:42.011Z] >>> [apiv2][query] GET https://firestore.googleapis.com/v1/projects/blogging-app-c72be/databases/(default)/collectionGroups/-/fields?filter=indexConfig.usesAncestorConfig=false OR ttlConfig:* [none]
+[debug] [2024-11-17T05:03:42.394Z] <<< [apiv2][status] GET https://firestore.googleapis.com/v1/projects/blogging-app-c72be/databases/(default)/collectionGroups/-/indexes 200
+[debug] [2024-11-17T05:03:42.394Z] <<< [apiv2][body] GET https://firestore.googleapis.com/v1/projects/blogging-app-c72be/databases/(default)/collectionGroups/-/indexes {}
+[debug] [2024-11-17T05:03:42.634Z] <<< [apiv2][status] GET https://firestore.googleapis.com/v1/projects/blogging-app-c72be/databases/(default)/collectionGroups/-/fields?filter=indexConfig.usesAncestorConfig=false OR ttlConfig:* 200
+[debug] [2024-11-17T05:03:42.634Z] <<< [apiv2][body] GET https://firestore.googleapis.com/v1/projects/blogging-app-c72be/databases/(default)/collectionGroups/-/fields?filter=indexConfig.usesAncestorConfig=false OR ttlConfig:* {"fields":[{"name":"projects/blogging-app-c72be/databases/(default)/collectionGroups/__default__/fields/*","indexConfig":{"indexes":[{"queryScope":"COLLECTION","fields":[{"fieldPath":"*","order":"ASCENDING"}],"state":"READY"},{"queryScope":"COLLECTION","fields":[{"fieldPath":"*","order":"DESCENDING"}],"state":"READY"},{"queryScope":"COLLECTION","fields":[{"fieldPath":"*","arrayConfig":"CONTAINS"}],"state":"READY"}]}}]}
+[info] 
+=== Genkit Setup
+[debug] [2024-11-17T05:03:42.699Z] Error: spawnSync npm ENOENT
+    at Object.spawnSync (node:internal/child_process:1124:20)
+    at spawnSync (node:child_process:876:24)
+    at execFileSync (node:child_process:919:15)
+    at getGenkitVersion (C:\Users\Gurneet Singh\AppData\Roaming\npm\node_modules\firebase-tools\lib\init\features\genkit\index.js:29:58)
+    at doSetup (C:\Users\Gurneet Singh\AppData\Roaming\npm\node_modules\firebase-tools\lib\init\features\genkit\index.js:56:30)
+    at init (C:\Users\Gurneet Singh\AppData\Roaming\npm\node_modules\firebase-tools\lib\init\index.js:41:15)
+    at init (C:\Users\Gurneet Singh\AppData\Roaming\npm\node_modules\firebase-tools\lib\init\index.js:42:16)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+[error] 
+[error] Error: An unexpected error has occurred.
